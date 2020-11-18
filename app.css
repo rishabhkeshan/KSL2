@@ -34,7 +34,8 @@ h5{
   font-style: bold;
 }
 .acm{
-  font:1.1em;
+  font:1.2em;
+  font-family: 'Acme', sans-serif;
 }
 /* Header/Blog Title */
 .header {
@@ -115,6 +116,10 @@ header{
   
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {
+      header{
+          width:80%;
+          height:auto;
+      }
     .leftcolumn, .rightcolumn {   
       width: 100%;
       padding: 0;
@@ -125,6 +130,13 @@ header{
   }
 
   @media screen and (max-width: 450px) {
+    .colr {padding:0; }
+    .coll {padding:0;}
+    .colm{padding:0;}
+    header{
+        width:45%;
+        height:auto;
+    }
     .leftcolumn, .rightcolumn {   
       width: 85%;
       padding: 0;
