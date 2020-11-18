@@ -141,11 +141,13 @@ header{
     .colr {padding:0; }
     .coll {padding:0;}
     .colm{padding:0;}
+    h1{padding-top: 90%;}
     header{
         width:45%;
         height:auto;
         text-align: center;
     }
+
     .leftcolumn, .rightcolumn {   
       width: 85%;
       padding: 0;
@@ -174,8 +176,8 @@ header{
 }
   .media{
     float: right;
-    padding-right:50%;
-    padding-left:50%;
+    padding-right:80%;
+    padding-left:80%;
   }
 .social-icons li {
   display: inline-block;
@@ -187,7 +189,7 @@ header{
 .social-icons a {
   position: relative;
   display: flex;
-  width: 48px;
+  width: 58px;
   height: 48px;
   word-break: break-all;
 }
