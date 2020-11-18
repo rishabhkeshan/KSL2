@@ -31,6 +31,7 @@ h5{
 }
 .sub{
   color:teal;
+  font-style: bold;
 }
 .acm{
   font:1.1em;
@@ -44,8 +45,33 @@ h5{
     background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
   }
 header{
+  padding: 0;
   text-align: center;
   font-family: 'Acme', sans-serif;
+}
+
+#jump{
+  width: 200px;
+  height: 200px;
+}
+#look{
+  width: 200px;
+  height: 200px;
+}
+.coll{
+  padding-left: 10%;
+  float: left;
+  width: 20%;
+}
+.colm{
+  padding-top: 2%;
+  width:50%;
+  margin: auto;
+}
+.colr{
+  float:right;
+  padding-right: 10%;
+  width:20%
 }
   /* Create two unequal columns that floats next to each other */
 /* Left column */
@@ -141,11 +167,14 @@ header{
 }
 
 h1 {
-  animation: color-change 1.5s infinite;
+  animation: color-change 2s infinite;
 }
 
 @keyframes color-change {
   0% { color: black; }
-  50% { color: teal; }
+  20% { color: teal; }
+  40% { color: purple; }
+  60% { color: orange; }
+  80% { color: teal; }
   100% { color: black; }
 }
