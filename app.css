@@ -1,0 +1,151 @@
+
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+    color: black;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+}
+p{
+  font-size:15px;
+}
+li{
+  font-size: 15px;
+}
+h4{
+  font-family: 'Inter', sans-serif;
+  font-style: bold;
+  font-weight: 600;
+}
+h3{
+  color: white;
+}
+h5{
+  font-size: 1.2em;
+}
+.sub{
+  color:teal;
+}
+.acm{
+  font:1.1em;
+}
+/* Header/Blog Title */
+.header {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    background-color: #36096d;
+    background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+  }
+header{
+  text-align: center;
+  font-family: 'Acme', sans-serif;
+}
+  /* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 60%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 40%;
+    padding-left: 20px;
+  }
+  
+  
+  /* Add a card effect for articles */
+  .card {
+     border-radius:20px ;
+     padding: 20px;
+     margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+      align-content: center;
+      text-emphasis: center;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .leftcolumn, .rightcolumn {   
+      width: 85%;
+      padding: 0;
+      align-content: center;
+      text-emphasis: center;
+      align-items: center;
+    }
+  }
+  footer{
+    text-align: center;
+    background-color: #36096d;
+    background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+  }
+  .img-class {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  a{
+    color: white;
+  }
+.social-icons{
+  height: 20px;
+}
+  .media{
+    float: right;
+    padding-right:50%;
+    padding-left:50%;
+  }
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  
+}
+
+.social-icons a {
+  position: relative;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  word-break: break-all;
+}
+
+h1 {
+  animation: color-change 1.5s infinite;
+}
+
+@keyframes color-change {
+  0% { color: black; }
+  50% { color: teal; }
+  100% { color: black; }
+}
