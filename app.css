@@ -95,6 +95,10 @@ header{
      margin-top: 20px;
   }
   
+.card:hover{
+    background-color: rgba(14, 114, 114, 0.24);
+}
+
   /* Clear floats after the columns */
   .row:after {
     content: "";
