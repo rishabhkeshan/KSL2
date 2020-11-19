@@ -6,6 +6,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-bottom:0;
+    line-height: 1.5em;
 }
 .sub{
     color:teal;
@@ -14,7 +15,8 @@ body{
 header{
     padding: 7% 0 0 0;
     text-align: center;
-    font-family: 'Acme', sans-serif;  
+    font-family: 'Acme', sans-serif; 
+    line-height: 1.2em; 
 }
 h1 {
     color: #EB5757;
@@ -57,12 +59,14 @@ h1 {
     text-align: center;
     width: 40%;
     padding-top:17%;
+    line-height: 1.5em;
 }
 #rules{
     display:block;
     overflow: auto;
     padding: 10% 15% 10% 15%;
     text-align: left;
+    line-height: 1.5em;
 }
 #rules-img{
     float:right;
@@ -72,6 +76,7 @@ h1 {
     display:block;
     overflow: auto;
     padding: 10% 12% 10% 10%;
+    line-height: 1.5em;
 }
 #prize-img{
     height: 50%;
