@@ -1,208 +1,145 @@
-
-* {
-    box-sizing: border-box;
-}
 body{
-    background-color: white;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    padding: 20px;
-    color: black;
-    overflow-x: hidden;
+    background-color:white ;
+    width: 100%;
     font-family: 'Inter', sans-serif;
-}
-p{
-  font-size:15px;
-}
-li{
-  font-size: 15px;
-}
-h4{
-  font-family: 'Inter', sans-serif;
-  font-style: bold;
-  font-weight: 600;
-}
-h3{
-  color: white;
-}
-h5{
-  font-size: 1.2em;
+    overflow-x: hidden;
+    margin-left: auto;
+    margin-right: auto;
 }
 .sub{
-  color:teal;
-  font-style: bold;
-}
-.acm{
-  font:1.2em;
-  font-family: 'Acme', sans-serif;
-}
-/* Header/Blog Title */
-.header {
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    background-color: #36096d;
-    background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+    color:teal;
+    font-style: bold;
   }
 header{
-  padding: 0;
-  text-align: center;
-  font-family: 'Acme', sans-serif;
+    padding: 5% 0 0 0;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
 }
-
+h1 {
+    animation: color-change 2s infinite;
+}
+  
+@keyframes color-change {
+    0% { color: black; }
+    20% { color: teal; }
+    40% { color: purple; }
+    60% { color: orange; }
+    80% { color: teal; }
+    100% { color: black; }
+}
 #jump{
-  width: 200px;
-  height: 200px;
+    width: 200px;
+    height: 200px;
 }
 #look{
-  width: 200px;
-  height: 200px;
+    width: 200px;
+    height: 200px;
 }
 .coll{
-  padding-left: 10%;
-  float: left;
-  width: 20%;
-}
-.colm{
-  padding-top: 2%;
-  width:50%;
-  margin: auto;
-}
-.colr{
-  float:right;
-  padding-right: 10%;
-  width:20%
-}
-  /* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
+    padding-left: 10%;
     float: left;
+    width: 20%;
+  }
+  .colm{
+    padding-top: 2%;
+    width:50%;
+    margin: auto;
+  }
+  .colr{
+    float:right;
+    padding-right: 10%;
+    width:20%
+  }
+#intro{
+    margin: auto;
+    text-align: center;
+    width: 40%;
+    padding-top:40px;
+}
+#rules{
+    padding: 40px 40px 40px 40px;
+    text-align: left;
+}
+#rules-img{
+    float:right;
+}
+#prizes{
+    padding: 40px 50px 40px 40px;
+}
+#prize-text{
+    text-align: right;
+    float:right;
+}
+#link{
+    padding: 40px 40px 0 40px;
+    text-align: center;
+}
+footer{
+    background-color: #2f2f2f;
+    color: white;
+    height:120px;
+    margin-top:40px;
+}
+  
+ .rightcolumn {
+    padding-top:2px;
+    float: right;
     width: 60%;
   }
-  
-  /* Right column */
-  .rightcolumn {
-    float: left;
-    width: 40%;
-    padding-left: 20px;
-  }
-  
-  
-  /* Add a card effect for articles */
-  .card {
-     border-radius:20px ;
-     padding: 20px;
-     margin-top: 20px;
-  }
-  
-.card:hover{
-    background-color: rgba(14, 114, 114, 0.24);
-}
-
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Footer */
-  .footer {
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 800px) {
-      body{
-          margin: 0 auto;
-      }
-      header{
-          width:80%;
-          height:auto;
-          text-align: center;
-      }
-
-    .leftcolumn, .rightcolumn {   
-      width: 100%;
-      padding: 0;
-      align-content: center;
-      text-emphasis: center;
-      align-items: center;
-    }
+  .column{
+      padding-top:2px;
+      padding-left:40px;
   }
 
-  @media screen and (max-width: 450px) {
-    body{
-        margin: 0 auto;
-    }
-    .colr {padding:0; }
-    .coll {padding:0;}
-    .colm{padding:0;}
-    h1{padding-top: 90%;}
-    header{
-        width:45%;
-        height:auto;
-        text-align: center;
-    }
-
-    .leftcolumn, .rightcolumn {   
-      width: 85%;
-      padding: 0;
-      align-content: center;
-      text-emphasis: center;
-      align-items: center;
-    }
-  }
-  footer{
-    text-align: center;
-    background-color: #36096d;
-    background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
-  }
   .img-class {
-    height: 200px;
+    height: 190px;
     max-width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
+
   a{
     color: white;
   }
-.social-icons{
-  height: 20px;
+  @media screen and (max-width: 800px) {
+    body{
+        margin: 0 auto;
+    }
+    header{
+        width:80%;
+        height:auto;
+        text-align: center;
+    }
+    .head{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #intro{
+        width:60%;
+    }
 }
-  .media{
-    float: right;
-    padding-right:80%;
-    padding-left:80%;
+
+@media screen and (max-width: 450px) {
+  body{
+      margin: 0 auto;
   }
-.social-icons li {
-  display: inline-block;
-  margin-bottom: 5px;
-  vertical-align: middle;
-  
-}
-
-.social-icons a {
-  position: relative;
-  display: flex;
-  width: 58px;
-  height: 48px;
-  word-break: break-all;
-}
-
-h1 {
-  animation: color-change 2s infinite;
-}
-
-@keyframes color-change {
-  0% { color: black; }
-  20% { color: teal; }
-  40% { color: purple; }
-  60% { color: orange; }
-  80% { color: teal; }
-  100% { color: black; }
+  .colr {padding:0; }
+  .coll {padding:0;}
+  .colm{padding:0;}
+  h1{padding-top: 90%;}
+  header{
+      width:45%;
+      height:auto;
+      text-align: center;
+  }
+  .head{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #intro{
+    width:80%;
+    }
 }
