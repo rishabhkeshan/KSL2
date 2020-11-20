@@ -1,176 +1,195 @@
-body{
-    background-color:white ;
-    width: 100%;
-    font-family: 'Inter', sans-serif;
-    overflow-x: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom:0;
-    line-height: 1.5em;
+@font-face {
+  font-family: cbb;
+  src: url(Cerebri-Sans/CerebriSans-Bold.ttf);
 }
-.sub{
-    color:teal;
-    font-style: bold;
-  }
-header{
-    padding: 7% 0 0 0;
-    text-align: center;
-    font-family: 'Acme', sans-serif; 
-    line-height: 1.2em; 
+body {
+  background-color: white;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  line-height: 1.5em;
+  font-family: cbb;
+}
+.sub {
+  color: teal;
+  font-style: bold;
+}
+header {
+  padding: 7% 0 0 0;
+  text-align: center;
+  line-height: 1.2em;
 }
 h1 {
-    color: #EB5757;
-
+  color: #eb5757;
+  font-family: cbb;
 }
-  
+
 @keyframes color-change {
-    0% { color: black; }
-    20% { color: teal; }
-    40% { color: purple; }
-    60% { color: orange; }
-    80% { color: teal; }
-    100% { color: black; }
-}
-#jump{
-    width: 200px;
-    height: 200px;
-}
-#look{
-    width: 200px;
-    height: 200px;
-}
-.coll{
-    
-    float: left;
-    width: 20%;
+  0% {
+    color: black;
   }
-  .colm{
-    padding-top: 2%;
-    width:50%;
-    margin: auto;
+  20% {
+    color: teal;
   }
-  .colr{
-    float:right;
-    
-    width:20%
+  40% {
+    color: purple;
   }
-#intro{
-    margin: auto;
-    text-align: center;
-    width: 40%;
-    padding-top:17%;
-    line-height: 1.5em;
-}
-#rules{
-    display:block;
-    overflow: auto;
-    padding: 10% 15% 10% 15%;
-    text-align: left;
-    line-height: 1.5em;
-}
-#rules-img{
-    float:right;
-    height: 0.1%;
-}
-#prizes{
-    display:block;
-    overflow: auto;
-    padding: 10% 12% 10% 10%;
-    line-height: 1.5em;
-}
-#prize-img{
-    height: 50%;
-}
-#prize-text{
-    text-align: right;
-    float:right;
-}
-#link{
-    padding: 40px 40px 0 40px;
-    text-align: center;
-}
-footer{
-    background-color: #2f2f2f;
-    color: white;
-    height:120px;
-    margin-top:40px;
-    margin-bottom: 0;
-}
-  
- .rightcolumn {
-    padding-top:2px;
-    float: right;
-    width: 60%;
+  60% {
+    color: orange;
   }
-  .column{
-      padding-top:2px;
-      padding-left:40px;
+  80% {
+    color: teal;
   }
+  100% {
+    color: black;
+  }
+}
+#jump {
+  width: 25em;
+  height: 25em;
+}
+#look {
+  width: 25em;
+  height: 25em;
+}
+.coll {
+  float: left;
+  padding-top: 2em;
+}
+.colm {
+  margin: auto;
+}
+.colr {
+  float: right;
+  padding-top: 2em;
+}
+#intro {
+  margin: auto;
+  text-align: center;
+  width: 40%;
+  padding-top: 17%;
+  line-height: 1.5em;
+}
+#rules {
+  display: block;
+  overflow: auto;
+  padding: 10% 15% 10% 15%;
+  text-align: left;
+  line-height: 1.5em;
+}
+#rules-img {
+  float: right;
+  height: 0.1%;
+}
+#prizes {
+  display: block;
+  overflow: auto;
+  padding: 10% 12% 10% 10%;
+  line-height: 1.5em;
+}
+#prize-img {
+  height: 50%;
+}
+#prize-text {
+  text-align: right;
+  float: right;
+}
+#link {
+  padding: 40px 40px 0 40px;
+  text-align: center;
+}
+footer {
+  background-color: #2f2f2f;
+  color: white;
+  height: 120px;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
 
-  .img-class {
-    height: 180px;
-    max-width: 100%;
-    display: block;
-    margin-left: auto;
+.rightcolumn {
+  padding-top: 2px;
+  float: right;
+  width: 60%;
+}
+.column {
+  padding-top: 2px;
+  padding-left: 40px;
+}
+
+.img-class {
+  height: 180px;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: white;
+}
+@media screen and (max-width: 800px) {
+  body {
+    margin: 0 auto;
+  }
+  header {
+    width: 80%;
+    height: auto;
+    text-align: center;
+  }
+  .head {
+    text-align: center;
     margin-right: auto;
+    margin-left: auto;
   }
-
-  a{
-    color: white;
+  #intro {
+    width: 75%;
   }
-  @media screen and (max-width: 800px) {
-    body{
-        margin: 0 auto;
-    }
-    header{
-        width:80%;
-        height:auto;
-        text-align: center;
-    }
-    .head{
-        text-align: center;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    #intro{
-        width:75%;
-    }
 }
 
 @media screen and (max-width: 450px) {
-  body{
-      margin: 0 auto;
+  body {
+    margin: 0 auto;
   }
-  .colr {padding:0; }
-  .coll {padding:0;}
-  .colm{padding:0;}
-  h1{padding-top: 90%;}
-  header{
-      width:45%;
-      height:auto;
-      text-align: center;
+  .colr {
+    padding: 0;
   }
-  .head{
+  .coll {
+    padding: 0;
+  }
+  .colm {
+    padding: 0;
+  }
+  h1 {
+    padding-top: 90%;
+  }
+  header {
+    width: 45%;
+    height: auto;
+    text-align: center;
+  }
+  .head {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
   }
-  #intro{
-    width:80%;
-    padding-top:20%;
+  #intro {
+    width: 80%;
+    padding-top: 20%;
     line-height: 1.8em;
-    }
- #rules{
+  }
+  #rules {
     padding: 12% 15% 12% 15%;
     line-height: 1.6em;
- }
- #prizes{
+  }
+  #prizes {
     padding: 12% 12% 12% 10%;
     line-height: 1.6em;
- }
- #link{
+  }
+  #link {
     padding: 40px 40px 0 40px;
-    line-height:1.7em ;
- }
- 
+    line-height: 1.7em;
+  }
 }
